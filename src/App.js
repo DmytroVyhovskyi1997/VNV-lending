@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home/Home";
+import Order from "./pages/Order/Order";
+import LandingPage from "./components/LandingPage/LandingPage";
+import SiteAudit from "./components/SiteAudit/SiteAudit";
+import InternetShop  from "./components/InternetShop/InternetShop";
+import MultiPage from "./components/MultiPage/MultiPage";
+import Consultation from "./components/Consultation/Consultation";
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="order" element={<Order />}>
+        <Route path="page" element={<LandingPage />} />
+        <Route path="site" element={<MultiPage/>} />
+        <Route path="shop" element={<InternetShop/>} />
+        <Route path="audit" element={<SiteAudit />} />
+        <Route path="consultation" element={<Consultation />} />
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 
