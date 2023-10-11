@@ -7,7 +7,7 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.NODE_ENV==='production' ? '/ArtfulSpaces' : '/'}>
+    <BrowserRouter basename="VNV-lending">
       <App />
     </BrowserRouter>
   </React.StrictMode>
