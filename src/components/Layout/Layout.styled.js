@@ -2,21 +2,9 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
+  max-width: 1280px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1999px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  padding: 0 16px;
 `;
 
 export const Link = styled(NavLink)`
@@ -36,9 +24,9 @@ export const Link = styled(NavLink)`
   focus {
     color: rgb(65, 144, 213);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 768px) {
-      margin-right: 100px;
-    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 100px;
   }
 `;
 

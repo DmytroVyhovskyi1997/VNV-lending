@@ -31,12 +31,14 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalContent = styled.div`
+border-radius: 10px;
+padding:10px 30px;
+font-size: 24px;
+font-weight:bold;
+width:200px;
+@media screen and (min-width: 768px) {
   width:400px;
-  
-  border-radius: 10px;
-  padding:10px 30px;
-  font-size: 24px;
-  font-weight:bold;
+}
 `;
 
 export const CloseButton = styled.button`

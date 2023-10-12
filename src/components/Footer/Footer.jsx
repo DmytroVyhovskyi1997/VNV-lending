@@ -33,16 +33,24 @@ const Footer = () => {
           <Title>Our contacts :</Title>
           <Logo>
             <Li>
-              <BsFacebook size={42} color="#4190d5" />
+              <Email href="https://www.facebook.com/people/VNV-Solutions/100088433736254/">
+                <BsFacebook size={42} color="#4190d5" />
+              </Email>
             </Li>
             <Li>
-              <BsInstagram size={42} color="#4190d5" />
+              <Email href="https://www.instagram.com/vnv_solutions/?igshid=MWI4MTIyMDE%3D">
+                <BsInstagram size={42} color="#4190d5" />
+              </Email>
             </Li>
             <Li>
-              <FaTelegram size={42} color="#4190d5" />
+              <Email href="https://t.me/vnv_solutions">
+                <FaTelegram size={42} color="#4190d5" />
+              </Email>
             </Li>
             <Li>
-              <BiLogoTiktok size={42} color="#4190d5" />
+              <Email href="https://www.tiktok.com/@vnvsolutions?_t=8YVB28bloQP&_r=1">
+                <BiLogoTiktok size={42} color="#4190d5" />
+              </Email>
             </Li>
           </Logo>
         </LogoBox>

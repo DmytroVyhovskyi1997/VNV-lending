@@ -50,12 +50,14 @@ background-color:white;
 `
 
 export const BoxLink = styled.ul`
-display:flex;
-justify-content: space-around;
 padding:0;
 background-color:black;
 padding:20px;
 border-radius:10px;
+@media screen and (min-width: 768px) {
+  display:flex;
+  justify-content: space-around;
+}
 `
 
 export const Link = styled(NavLink)`

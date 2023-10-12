@@ -1,24 +1,20 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ModalOverlay = styled.div`
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: rgba(0, 0, 0, 0.5);
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 999;
-
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
 `;
 
 export const ModalContainer = styled.div`
- 
   padding: 20px;
-
   position: relative;
   background-color: black;
   padding: 40px;
@@ -31,13 +27,17 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalContent = styled.div`
-  width:400px;
-  height:400px;
+  width: 200px;
+  height: 300px;
   border-radius: 10px;
-  padding:10px 30px;
+  padding: 10px 30px;
   font-size: 24px;
-  font-weight:bold;
-  color:white;
+  font-weight: bold;
+  color: white;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 400px;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -48,10 +48,9 @@ export const CloseButton = styled.button`
   border: none;
   cursor: pointer;
   font-size: 18px;
-  color:white;
-  &:hover{
+  color: white;
+  &:hover {
     color: #4190d5;
     animation: fsjOeB 3s infinite;
   }
 `;
-
