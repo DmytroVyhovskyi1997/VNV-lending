@@ -1,24 +1,24 @@
 import ButtonOrder from "../../components/ButtonOrder/ButtonOrder";
-import FAQ from '../../components/FAQ/FAQ'
+import FAQ from "../../components/FAQ/FAQ";
 import { Text, Box, Block, Services, BoxLink, Link } from "./Order.styled";
-import { Outlet, useNavigate  } from "react-router-dom";
-import React, { useEffect} from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import OurProject from "../../components/OurProject/OurProject";
 
 const Order = () => {
-    const navigate = useNavigate();
-    
-    useEffect(() => {
-        const pageFromLocalStorage = localStorage.getItem("selectedPage");
-        if (pageFromLocalStorage) {
-          navigate(pageFromLocalStorage); 
-        }
-      }, [navigate]);
+  const navigate = useNavigate();
 
-      const handlePageLinkClick = (page) => {
-        localStorage.setItem("selectedPage", page);
-        navigate(page);
-      };
+  useEffect(() => {
+    const pageFromLocalStorage = localStorage.getItem("selectedPage");
+    if (pageFromLocalStorage) {
+      navigate(pageFromLocalStorage);
+    }
+  }, [navigate]);
+
+  const handlePageLinkClick = (page) => {
+    localStorage.setItem("selectedPage", page);
+    navigate(page);
+  };
 
   return (
     <div>
@@ -61,26 +61,39 @@ const Order = () => {
         <Services>
           <BoxLink>
             <li>
-              <Link to="page" onClick={() => handlePageLinkClick("page")}>LandingPage</Link>
+              <Link to="page" onClick={() => handlePageLinkClick("page")}>
+                LandingPage
+              </Link>
             </li>
             <li>
-              <Link to="site" onClick={() => handlePageLinkClick("site")}>Multi-page site</Link>
+              <Link to="site" onClick={() => handlePageLinkClick("site")}>
+                Multi-page site
+              </Link>
             </li>
             <li>
-              <Link to="shop" onClick={() => handlePageLinkClick("shop")}>Internet-shop</Link>
+              <Link to="shop" onClick={() => handlePageLinkClick("shop")}>
+                Internet-shop
+              </Link>
             </li>
             <li>
-              <Link to="audit" onClick={() => handlePageLinkClick("audit")}>Site audit</Link>
+              <Link to="audit" onClick={() => handlePageLinkClick("audit")}>
+                Site audit
+              </Link>
             </li>
             <li>
-              <Link to="consultation" onClick={() => handlePageLinkClick("consultation")}>Individual consultation</Link>
+              <Link
+                to="consultation"
+                onClick={() => handlePageLinkClick("consultation")}
+              >
+                Individual consultation
+              </Link>
             </li>
           </BoxLink>
           <Outlet />
         </Services>
       </div>
-      <FAQ/>
-      <OurProject/>
+      <FAQ />
+      <OurProject />
     </div>
   );
 };

@@ -1,4 +1,13 @@
-import { Box, Email, LogoBox, Logo, Li, FormBox,FormTitle,Title} from "./Footer.styled";
+import {
+  Box,
+  Email,
+  LogoBox,
+  Logo,
+  Li,
+  FormBox,
+  FormTitle,
+  Title,
+} from "./Footer.styled";
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { FaTelegram } from "react-icons/fa";
@@ -9,8 +18,11 @@ const Footer = () => {
   return (
     <div>
       <FormBox>
-        <FormTitle>Would you like to order a site?<br/>
-Fill out the form</FormTitle>
+        <FormTitle>
+          Would you like to order a site?
+          <br />
+          Fill out the form
+        </FormTitle>
         <FormFooter />
       </FormBox>
       <Box>
@@ -18,7 +30,7 @@ Fill out the form</FormTitle>
           <Email href="mailto:team@vnv.solutions">team@vnv.solutions</Email>
         </div>
         <LogoBox>
-         <Title>Our contacts :</Title>
+          <Title>Our contacts :</Title>
           <Logo>
             <Li>
               <BsFacebook size={42} color="#4190d5" />

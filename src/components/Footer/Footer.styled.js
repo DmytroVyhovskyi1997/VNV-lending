@@ -7,11 +7,13 @@ export const Email = styled.a`
 `;
 
 export const Box = styled.div`
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
 `;
 export const LogoBox = styled.div`
   margin-right: 100px;

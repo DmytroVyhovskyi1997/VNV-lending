@@ -5,10 +5,8 @@ import ModalOrder from "../ModalOrder/ModalOrder";
 const ButtonOrder = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
 
-
   const handleOpenModal = () => {
     setIsOpenModal(true);
-   
   };
   const handleCloseModal = () => {
     setIsOpenModal(false);
@@ -17,9 +15,8 @@ const ButtonOrder = () => {
   return (
     <>
       <Button onClick={handleOpenModal}>Order</Button>
-    
-      <ModalOrder isOpen={isOpenModal} onClose={handleCloseModal}/>
-      
+
+      <ModalOrder isOpen={isOpenModal} onClose={handleCloseModal} />
     </>
   );
 };

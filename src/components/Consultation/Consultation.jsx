@@ -1,7 +1,7 @@
-import { BiCalendarEdit } from 'react-icons/bi';
-import { BiCalendarWeek } from 'react-icons/bi';
-import ButtonOrder from '../ButtonOrder/ButtonOrder';
-import { AnimatedText } from '../MultiPage/MultiPage.styled';
+import { BiCalendarEdit } from "react-icons/bi";
+import { BiCalendarWeek } from "react-icons/bi";
+import ButtonOrder from "../ButtonOrder/ButtonOrder";
+import { AnimatedText } from "../MultiPage/MultiPage.styled";
 
 const Consultation = () => {
   return (
@@ -14,13 +14,16 @@ const Consultation = () => {
       </p>
       <ul>
         <li>
-            < BiCalendarEdit size={19}/>
-            Consultation lasts 1.5 hours in online format</li>
+          <BiCalendarEdit size={19} />
+          Consultation lasts 1.5 hours in online format
+        </li>
         <li>
-            <BiCalendarWeek size={19}/>
-            You can indicate additional questions about your business and, upon prior agreement, I will include them in our consultation</li>
+          <BiCalendarWeek size={19} />
+          You can indicate additional questions about your business and, upon
+          prior agreement, I will include them in our consultation
+        </li>
       </ul>
-      <ButtonOrder/>
+      <ButtonOrder />
     </AnimatedText>
   );
 };
