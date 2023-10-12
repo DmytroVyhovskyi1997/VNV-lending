@@ -12,7 +12,7 @@ const ModalOrder = ({ isOpen, children, onClose }) => {
   return (
     <ModalBox>
       <ModalContainer>
-        <FormOrder/>
+        <FormOrder />
         <CloseButton onClick={onClose}>
           <AiFillCloseCircle size={32} />
         </CloseButton>

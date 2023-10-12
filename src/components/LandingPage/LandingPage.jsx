@@ -1,10 +1,8 @@
-import { BiCalendarAlt } from 'react-icons/bi';
-import { BiCalendarEdit } from 'react-icons/bi';
-import { BiCalendarWeek } from 'react-icons/bi';
-import ButtonOrder from '../ButtonOrder/ButtonOrder';
-import { AnimatedText } from '../MultiPage/MultiPage.styled';
-
-
+import { BiCalendarAlt } from "react-icons/bi";
+import { BiCalendarEdit } from "react-icons/bi";
+import { BiCalendarWeek } from "react-icons/bi";
+import ButtonOrder from "../ButtonOrder/ButtonOrder";
+import { AnimatedText } from "../MultiPage/MultiPage.styled";
 
 const LandingPage = () => {
   return (
@@ -20,18 +18,19 @@ const LandingPage = () => {
       <h3>Choose this type of site if:</h3>
       <ul>
         <li>
-            <BiCalendarAlt size={19}/>
+          <BiCalendarAlt size={19} />
           You want to present your own information product, service, book, etc.
         </li>
         <li>
-            <BiCalendarEdit size={19}/>
-            You have a small number of products (up to 8)</li>
+          <BiCalendarEdit size={19} />
+          You have a small number of products (up to 8)
+        </li>
         <li>
-            <BiCalendarWeek size={19}/>
+          <BiCalendarWeek size={19} />
           You need a short portfolio of a specialist or a business card site
         </li>
       </ul>
-      <ButtonOrder/>
+      <ButtonOrder />
     </AnimatedText>
   );
 };

@@ -1,5 +1,5 @@
 import ButtonOrder from "../../components/ButtonOrder/ButtonOrder";
-import { Blog,  P, Title } from "./Home.styled";
+import { Blog, P, Title } from "./Home.styled";
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
         develop and optimize their businesses, using all development tools
         <br /> to help Your business achieve desired results
       </Blog>
-      <ButtonOrder/>
+      <ButtonOrder />
     </>
   );
 };
