@@ -2,12 +2,28 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
+margin: 0 auto;
   padding: 0 16px;
+@media screen and (max-width: 767px){
+    max-width: 480px;
+}
+@media screen and (min-width: 768px){
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+@media screen and (min-width: 1280px){
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 `;
 
 export const Link = styled(NavLink)`
+@media screen and (max-width: 767px){
+display:none;
+}
+@media screen and (min-width: 768px){
   border-radius: 4px;
   text-decoration: none;
   color: white;
@@ -28,9 +44,11 @@ export const Link = styled(NavLink)`
   @media screen and (min-width: 768px) {
     margin-right: 100px;
   }
+}
 `;
 
 export const Header = styled.header`
+position:relative;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
