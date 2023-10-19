@@ -61,6 +61,11 @@ export const P = styled.p`
     color: rgb(65, 144, 213);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @media screen and (max-width: 767px) {
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
 `;
 const BlogChange = keyframes`
   from {

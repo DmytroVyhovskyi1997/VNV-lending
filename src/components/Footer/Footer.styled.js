@@ -4,6 +4,12 @@ export const Email = styled.a`
   color: #4190d5;
   font-size: 28px;
   text-decoration: underline;
+  @media screen and (max-width: 767px) {
+    display:flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-top:30px;
+  }
 `;
 
 export const Box = styled.div`
@@ -16,11 +22,16 @@ export const Box = styled.div`
   }
 `;
 export const LogoBox = styled.div`
+@media screen and (min-width: 1200px) {
   margin-right: 100px;
+}
 `;
 
 export const Logo = styled.ul`
   display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 `;
 const scaleText = keyframes`
   0% {
@@ -63,4 +74,9 @@ export const Title = styled.p`
   font-size: 32px;
   font-weight: bold;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+    display:flex;
+    justify-content: center;
+  }
 `;
