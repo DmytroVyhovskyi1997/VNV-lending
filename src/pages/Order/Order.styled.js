@@ -30,6 +30,12 @@ export const Box = styled.li`
   flex-wrap: wrap;
   align-content: flex-end;
   animation: ${slideInLeft} 1s ease-in-out;
+  @media screen and (min-width: 767px) {
+    width: 330px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 `;
 export const Block = styled.ul`
   display: flex;
@@ -81,5 +87,8 @@ export const Link = styled(NavLink)`
   focus {
     color: rgb(65, 144, 213);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 767px) and (max-width: 1999px) {
+    margin-right: 0;
   }
 `;

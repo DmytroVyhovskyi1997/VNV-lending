@@ -42,6 +42,9 @@ display:none;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+  @media screen and (min-width: 1200px){
     margin-right: 100px;
   }
 }
