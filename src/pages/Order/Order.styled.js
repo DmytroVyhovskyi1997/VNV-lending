@@ -36,6 +36,9 @@ export const Block = styled.ul`
   gap: 20px;
   flex-wrap: wrap;
   padding: 0;
+  @media screen and (max-width: 767px) {
+  justify-content: space-evenly;
+  }
 `;
 
 export const Services = styled.div`

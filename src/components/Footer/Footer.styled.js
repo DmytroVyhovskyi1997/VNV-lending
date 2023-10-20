@@ -31,6 +31,7 @@ export const Logo = styled.ul`
   display: flex;
   @media screen and (max-width: 767px) {
     justify-content: center;
+    margin-bottom:50px;
   }
 `;
 const scaleText = keyframes`
@@ -55,6 +56,11 @@ export const Li = styled.li`
 export const FormBox = styled.div`
   display: flex;
   margin-top: 150px;
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+  }
 `;
 
 export const FormTitle = styled.p`
@@ -67,6 +73,11 @@ export const FormTitle = styled.p`
     color: #4190d5;
     animation: fsjOeB 3s infinite;
   }
+  @media screen and (max-width: 767px) {
+    margin-bottom:60px;
+    text-align: center;
+  }
+
 `;
 
 export const Title = styled.p`

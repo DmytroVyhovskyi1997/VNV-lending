@@ -56,6 +56,7 @@ export const P = styled.p`
   cursor: pointer;
   animation: ${colorChange} 5s;
   animation-iteration-count: 1;
+  text-align: center;
   &:hover,
   focus {
     color: rgb(65, 144, 213);

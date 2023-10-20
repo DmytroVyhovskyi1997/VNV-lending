@@ -31,7 +31,7 @@ export const ModalContent = styled.div`
   height: 300px;
   border-radius: 10px;
   padding: 10px 30px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   @media screen and (min-width: 768px) {

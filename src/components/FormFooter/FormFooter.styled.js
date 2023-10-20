@@ -40,6 +40,7 @@ export const Button = styled.button`
 `;
 
 export const BoxIcon = styled.div`
+display:flex;
 position: absolute;
     top: 0;
     left: 50%;
